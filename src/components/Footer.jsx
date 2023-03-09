@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 import { TfiLinkedin} from 'react-icons/tfi';
 import { GrGithub } from 'react-icons/gr';
-import Link from 'next/link'
 
 const Footer = () => {
   return (

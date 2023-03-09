@@ -12,14 +12,14 @@ const Menu = () => {
             <div className="menu-items">
                 <ul>
                     <li><Link href='/product'>Products</Link></li>
-                    <li><Link href='#'>About Us</Link></li>
-                    <li><Link href='#'>Privacy Policy</Link></li>
+                    <li><Link href='/'>About Us</Link></li>
+                    <li><Link href='/'>Privacy Policy</Link></li>
                 </ul>
             </div>
             <div className="call-to-action-icon">
                 <ul>
-                    <li onClick={() => settoggle(!toggle)}><Link href='#' className={`${!toggle ? '' : 'active'}`}><FiHeart /></Link></li>
-                    <li><Link href='#'><FiUser /></Link></li>
+                    <li onClick={() => settoggle(!toggle)}><Link href='/' className={`${!toggle ? '' : 'active'}`}><FiHeart /></Link></li>
+                    <li><Link href='/'><FiUser /></Link></li>
                     <li onClick={() => setShowCart(true)
                     }><FiShoppingBag />
                         <span className='cart-item-qty'>{totalQuantity}</span>

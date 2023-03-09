@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { client, urlFor } from 'Lib/client';
-import Link from 'next/Link';
+import Link from 'next/link';
 import { FaArrowLeft } from 'react-icons/fa';
 import { FiMinus, FiPlus } from 'react-icons/fi';
 import { Products } from '../../components';
