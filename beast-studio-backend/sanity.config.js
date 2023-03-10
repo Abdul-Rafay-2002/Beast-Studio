@@ -6,7 +6,6 @@ import {schemaTypes} from './schemas'
 export default defineConfig({
   name: 'default',
   title: 'Beast Studio Backend',
-
   projectId: '65xpaikk',
   dataset: 'production',
 

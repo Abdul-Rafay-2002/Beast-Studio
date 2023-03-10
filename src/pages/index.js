@@ -6,11 +6,10 @@ const Home = ({ products, bannerData, footerbannerData }) => (
 	<div>
 		<HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 		<div className='product-heading'>
-				<h2>Best Selling Products</h2>
-				<p>Experience the best of the best - our best-selling products.</p>
+			<h2>Best Selling Products</h2>
+			<p>Experience the best of the best - our best-selling products.</p>
 		</div>
-
-		<div  className="products-container">
+		<div className="products-container">
 			<div className='product-wrapper'>
 				{products?.map((product, i) => i < 8 && (<Products key={product._id} product={product} />))}
 			</div>

@@ -16,7 +16,7 @@ export default async function handler(req, res) {
                 ],
                 line_items: req.body.map((item) => {
                     const img = item.image[0].asset._ref;
-                    const newImg = img.replace('image-', 'https://cdn.sanity.io/images/65xpaikk/production/').replace('-webp', 'webp');
+                    const newImg = img.replace('image-', 'https://cdn.sanity.io/images/65xpaikk/production/').replace('-jpg', '.jpg');
                     return {
                         price_data: {
                             currency: 'usd',
@@ -33,7 +33,7 @@ export default async function handler(req, res) {
                         quantity: item.quantity
                     }
                 }),
-                success_url: `${req.headers.origin}/?success=true`,
+                success_url: `${req.headers.origin}/success`,
                 cancel_url: `${req.headers.origin}/?canceled=true`,
             }
             const session = await stripe.checkout.sessions.create(params);

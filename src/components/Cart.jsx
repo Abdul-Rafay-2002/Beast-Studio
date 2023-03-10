@@ -18,6 +18,7 @@ const Cart = () => {
 		onRemoveCartItem,
 		toggleCartItemsQuantity
 	} = useStateContext();
+	
 	const checkoutHandler = async () => {
 		const stripe = await getStripe();
 		const response = await fetch('/api/stripe', {
@@ -52,7 +53,7 @@ const Cart = () => {
 						<div className='empty-cart'>
 							<AiOutlineShopping size={150} />
 							<p>your cart is empty </p>
-							<Link href='/#main-product' onClick={() => setShowCart(false)}>
+							<Link href='/product' onClick={() => setShowCart(false)}>
 								Countinue Shopping?
 							</Link>
 						</div>
