@@ -422,6 +422,7 @@ span.plus {
 .product-detail h1 {
     font-size: 40px;
     line-height: 1em;
+    text-transform: capitalize;
 }
 
 .feature-prdct-container {
@@ -582,15 +583,16 @@ span.plus {
 
 
 .hero-banner-container {
-    width: 1340px;
-    margin: 0 auto;
-    height: 100vh;
+
     padding: 0 10px;
     background: var(--webkitgradient1);
     background: var(--gradient1);
 }
 
 .hero-wrapper {
+    width: 1340px;
+    margin: 0 auto;
+    height: 100vh;
     padding: 80px 0 20px;
     display: flex;
     justify-content: space-between;
@@ -727,7 +729,7 @@ span.plus {
 }
 
 /*Footer styling*/
-.footer-container {
+footer {
     background: var(--gradient1);
     padding: 10px;
 }
@@ -896,6 +898,10 @@ span.plus {
     height: 60vh;
 }
 
+.product-cart-container .cart-product:nth-child(even) {
+    background-color: rgb(227 224 224 / 20%);
+}
+
 .cart-product {
     display: flex;
     padding: 20px;
@@ -911,7 +917,9 @@ span.plus {
 
 .cart-product-heading h4,
 .cart-product-heading h6 {
-    margin: 10px 0;
+    margin: 0px 0px 10px 0;
+    text-transform: capitalize;
+    font-size: 18px;
 }
 
 .cart-product-detail .quantity-feild p {
@@ -950,14 +958,14 @@ span.plus {
 button.remove-product {
     width: 20px;
     height: 20px;
-    background: red;
+    background: #DA0000;
     /* outline: none; */
     border: none;
     border-radius: 10px;
     color: #fff;
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 3px;
+    right: 3px;
     cursor: pointer;
 }
 
@@ -1006,10 +1014,146 @@ button.remove-product svg {
     }
 }
 
+
+
+/*Thankyou Card*/
+.product-cart-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.product-cart-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: var(--grey1);
+    border-radius: 20px;
+}
+
+.product-cart-container::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background: #1A1A1A;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: var(--grey1);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background: var(--glass-bg-color);
+}
+
+
+/*xxxxxxxxxxxxxxxxxxxxxx MEDIA QUERY xxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*media Query*/
 @media screen and (max-width: 1500px) {
     .feature-prdct-container {
         width: 250%;
     }
 }
 
-/*Thankyou Card*/
+/* 1300px container media  */
+
+@media screen and (max-width: 1300px) {
+
+    .header-container,
+    .hero-wrapper,
+    .products-container,
+    .footer-banner-wrapper,
+    .footer-wrapper {
+        width: 1180px;
+        margin: 0 auto;
+    }
+
+    .product-item {
+        width: 373px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+
+    .header-container,
+    .hero-wrapper,
+    .products-container,
+    .footer-banner-wrapper,
+    .footer-wrapper {
+        width: 1020px;
+        margin: 0 auto;
+    }
+
+    nav.main-menu {
+        width: 65%;
+    }
+
+    .call-to-action-icon {
+        width: 25%;
+    }
+
+    .product-item {
+        width: 48%;
+    }
+
+    .footer-main h1 {
+        line-height: 34px;
+        font-size: 34px;
+    }
+    .product-wrapper{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .header-container,
+    .hero-wrapper,
+    .products-container,
+    .footer-banner-wrapper,
+    .footer-wrapper {
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    .header-wrapper {
+        justify-content: space-between;
+    }
+
+    nav.main-menu {
+        width: 70%;
+    }
+
+    .call-to-action-icon {
+        width: 25%;
+    }
+
+    .menu-items {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .header-container,
+    .hero-wrapper,
+    .products-container,
+    .footer-banner-wrapper,
+    .footer-wrapper {
+        width: 840px;
+        margin: 0 auto;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+        padding: 130px 0px 60px 0;
+    }
+
+    .hero-main,
+    .image-col {
+        width: 100%;
+    }
+}

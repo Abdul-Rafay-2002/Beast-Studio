@@ -5,7 +5,7 @@ import { GrGithub } from 'react-icons/gr';
 
 const Footer = () => {
   return (
-    <footer>
+
       <div className="footer-container">
         <div className="footer-wrapper">
           <p>© {new Date().getFullYear()} All Right Reserved - Beast Studio React By Rafay</p>
@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+
   )
 }
 

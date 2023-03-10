@@ -61,6 +61,7 @@ const Cart = () => {
 					<div className='product-cart-container'>
 						{cartItems.length >= 1 &&
 							cartItems.map((item) => (
+								
 								<div className='cart-product' key={item._id}>
 									<button className='remove-product' onClick={() => onRemoveCartItem(item)}>
 										<TfiClose />
