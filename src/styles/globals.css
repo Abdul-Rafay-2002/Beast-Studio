@@ -298,6 +298,10 @@ span.digit {
     transition: all .3s ease;
 }
 
+.products-container .product-wrapper .product-item {
+    margin-bottom: 30px;
+}
+
 #main-product .product-cart {
     height: 300px;
 }
@@ -332,6 +336,7 @@ span.digit {
     padding: 0 10px;
     text-align: center;
     margin: 10px 0;
+    font-size: 1rem;
 }
 
 .product-title h6 {
@@ -483,25 +488,30 @@ span.plus {
 .feature-prdct-container:hover {
     animation-play-state: paused;
 }
+
 /*Thankyou pages*/
-.thankyou-wrapper{
+.thankyou-wrapper {
     background: var(--glass-bg-color);
     padding: 40px;
     border-radius: 20px;
 }
-.thankyou-heading{
+
+.thankyou-heading {
     text-align: center;
 }
-.thankyou-heading h1{
+
+.thankyou-heading h1 {
     font-size: 3rem;
     line-height: 2.8rem;
 }
+
 .thankyou-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90vh;
 }
+
 .thankyou-cta {
     display: flex;
     justify-content: space-evenly;
@@ -550,6 +560,7 @@ span.plus {
     box-shadow: none;
     transform: translateY(0);
 }
+
 @keyframes slides {
     from {
         transform: translateX(0);
