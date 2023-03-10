@@ -12,7 +12,13 @@ const ProductDetails = ({ product, products }) => {
 	// For image effect for mouse-entering attribute
 	const [index, setIndex] = useState(0);
 	//This function will increament and decreament the product quantity as using useStateContext
-	const { increaseQty, descreaseQty, prdctQunatity, onAddtoCart } = useStateContext();
+	const { increaseQty, descreaseQty, prdctQunatity, onAddtoCart, setShowCart } = useStateContext();
+
+	//Buy Now functionality
+	const buyNowHandler = () =>{
+		onAddtoCart(product, prdctQunatity);
+		setShowCart(true)
+	}
 	return (
 		<>
 			<div className='prdct-detail-container'>
@@ -59,7 +65,7 @@ const ProductDetails = ({ product, products }) => {
 							<h3>Price : ${price}</h3>
 							<div className='action-btn'>
 								<button className='btn' onClick={() => onAddtoCart(product, prdctQunatity)}>Add To Cart</button>
-								<button className='btn'>Buy Now </button>
+								<button className='btn' onClick={buyNowHandler}>Buy Now </button>
 							</div>
 						</div>
 					</div>

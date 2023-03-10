@@ -11,7 +11,7 @@ const Footerbanner = ({ footerBanner }) => {
             <h1>{footerBanner.heading}</h1>
             <p className='footer-banner-description'>{footerBanner.description}</p>
             <div className='CTA-btn-wrapper'>
-              <Link href={`/products/${footerBanner.heading}`}>
+              <Link href={`/product`}>
                 <button type='button' className='cta  '>
                   <span className="hover-underline-animation"> {footerBanner.buttonText} </span>
                   <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">

@@ -12,7 +12,7 @@ const HeroBanner = ({ heroBanner }) => {
           <h1>{heroBanner.product}</h1>
           <p className='banner-description'>{heroBanner.description}</p>
           <div className='CTA-btn-wrapper'>
-            <Link href={`/products/${heroBanner.product}`}>
+            <Link href={`/product`}>
               <button type='button' className='cta  '>
                 <span className="hover-underline-animation"> {heroBanner.buttonText} </span>
                 <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
