@@ -18,7 +18,7 @@ const Home = ({ products, bannerData, footerbannerData }) => (
 
 		<FooterBanner footerBanner={footerbannerData.length && footerbannerData[0]} />
 	</>
-);
+); 
 
 //Fetching Santity Data to Use the getServerSideProps Function
 export const getServerSideProps = async () => {
