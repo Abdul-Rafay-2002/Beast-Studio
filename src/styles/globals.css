@@ -1423,6 +1423,11 @@ body::-webkit-scrollbar-thumb {
     .logo h2 {
         font-size: 32px;
     }
+    .product-main-image {
+        width: 200px;
+        height: 100%;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width:450px) {
     .header-container,
