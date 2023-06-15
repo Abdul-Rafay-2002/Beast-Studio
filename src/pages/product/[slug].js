@@ -32,7 +32,7 @@ const ProductDetails = ({ product, products }) => {
 				<div className='prdct-detail-wrapper'>
 					<div className='prodct-content'>
 						<div className='product-image-col'>
-							<img src={urlFor(image && image[index])} />
+							<div className='product-main-image'><img src={urlFor(image && image[index])} /></div>
 							<div className='discount'>
 								<h5>{discount}%</h5>
 							</div>
