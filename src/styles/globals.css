@@ -550,6 +550,7 @@ span.plus {
     background: var(--glass-bg-color);
     padding: 40px;
     border-radius: 20px;
+    margin: 0px 20px;
 }
 
 .thankyou-heading {
@@ -565,7 +566,8 @@ span.plus {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100%;
+    margin: 160px 0px 70px 0px;
 }
 
 .thankyou-cta {
@@ -768,7 +770,7 @@ span.plus {
 }
 
 .product-detail p {
-    margin: 20px 10px 0px 10px;
+    margin: 20px 0px;
 }
 
 .product-image-col {
@@ -1257,7 +1259,13 @@ body::-webkit-scrollbar-thumb {
         width: 720px;
         margin: 0 auto;
     }
-
+    .thankyou-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 120px 0 20px 0px;
+    }
 /* .product-variant img {
     width: 80px;
 } */
@@ -1349,6 +1357,26 @@ body::-webkit-scrollbar-thumb {
     .feature-products {
         margin-top: 50px;
     }
+    .thankyou-heading h1 {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+    .thankyou-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 160px 0 70px 0px;
+    }
+    .thankyou-heading svg {
+        position: absolute;
+        width: 67px;
+        height: 68px;
+        top: 127px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1360,7 +1388,13 @@ body::-webkit-scrollbar-thumb {
         width: 500px;
         margin: 0 auto;
     }
-   
+    .call-to-action-icon ul li span.cart-item-qty {
+        right: -7px;
+        width: 14px;
+        height: 16px;
+        font-size: 10px;
+        top: -4px;
+    }
 
     .logo h2 {
         font-size: 35px;
@@ -1398,7 +1432,20 @@ body::-webkit-scrollbar-thumb {
     .product-wrapper {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-    
+    .thankyou-cta a {
+        width: 50%;
+        font-size: 11px;
+        margin: 0 35px 0 35px;
+        padding: 14px 9px;
+    }
+    .thankyou-heading h1 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .thankyou-container {
+        height: 100%;
+        margin: 170px 0 70px 0;
+    }
 
 }
 @media screen and (max-width:540px) {
@@ -1409,6 +1456,22 @@ body::-webkit-scrollbar-thumb {
     .footer-wrapper {
         width: 450px;
         margin: 0 auto;
+    }
+    .thankyou-cta {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        align-items: center;
+        gap: 30px;
+    }
+    .thankyou-heading p {
+        font-size: 13px;
+    }
+    .thankyou-cta a {
+        width: 120px;
+        font-size: 10px;
+        margin: 0px;
+        padding: 14px 9px;
     }
 }
 @media screen and (max-width:500px) {
@@ -1482,6 +1545,10 @@ body::-webkit-scrollbar-thumb {
     }
     .product-detail h1 {
         font-size: 30px;
+    }
+    .thankyou-heading h1 {
+        font-size: 1rem;
+        line-height: 2rem;
     }
     
 }
