@@ -13,8 +13,8 @@ const Menu = () => {
             <div className="menu-items">
                 <ul>
                     <li><Link href='/product'>Products</Link></li>
-                    <li><Link href='/'>About Us</Link></li>
-                    <li><Link href='/'>Privacy Policy</Link></li>
+                    <li><Link href='/about'>About Us</Link></li>
+                    <li><Link href='/privacy'>Privacy Policy</Link></li>
                 </ul>
             </div>
            
@@ -25,8 +25,8 @@ const Menu = () => {
                         <div className={`${!toggleMenu ? 'hidden' : 'block transiton'} mobile-menu`}>
                             <ul>
                                 <li><Link href='/product'>Products</Link></li>
-                                <li><Link href='/'>About Us</Link></li>
-                                <li><Link href='/'>Privacy Policy</Link></li>
+                                <li><Link href='/about'>About Us</Link></li>
+                                <li><Link href='/privacy'>Privacy Policy</Link></li>
                             </ul>
                         </div>
                     </li>
